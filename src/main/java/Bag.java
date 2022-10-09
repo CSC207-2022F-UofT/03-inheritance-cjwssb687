@@ -83,8 +83,8 @@ public abstract class Bag {
 		if (numberOfContents>=capacity) {
 			return false;
 		}
-		contents[capacity]=x;
-		capacity++;
+		contents[numberOfContents]=x;
+		numberOfContents++;
 		return true;
 		
 	}
@@ -104,8 +104,9 @@ public abstract class Bag {
      * @return
      */
 	public String popItem() {
-		capacity--;
-		return contents[capacity];
+		if (numberOfContents==0) return null;
+		numberOfContents--;
+		return contents[numberOfContents];
 	}
 
 
