@@ -33,6 +33,7 @@ public abstract class Bag {
 		color=co;
 		capacity=ca;
 		numberOfContents=0;
+		contents=new String[100];	
 	}
 
 
