@@ -33,7 +33,7 @@ public abstract class Bag {
 		color=co;
 		capacity=ca;
 		numberOfContents=0;
-		contents=new String[100];	
+		contents=new String[ca+3];	
 	}
 
 
@@ -122,6 +122,9 @@ public abstract class Bag {
     public void increaseCapacity(int n) {
         // TODO: Implement this method.
 		this.capacity+=n;
+	   	String[] b=new String[this.capacity+3];
+	    	for (int i=0;i<numberOfContents;i++) b[i]=contents[i];
+	    	contents=b;
 
     }
 
