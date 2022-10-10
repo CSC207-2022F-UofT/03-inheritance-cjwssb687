@@ -53,7 +53,7 @@ public class CrossbodyBag extends Bag{
 	}
     @Override
     public void enhance() {
-		super.increaseCapacity(2);
+		super.increaseCapacity(1);
     }
 	@Override
     public String toString() {
